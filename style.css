@@ -1,0 +1,503 @@
+@import "tailwindcss" source("./");
+@source "./member1-patient";
+@source "./member2-hospital";
+@source "./member3-queue";
+@source "./member4-hospital-staff";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7fbff;
+    color: #172033;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+    padding: 20px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    border-bottom: 1px solid #e8eef5;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 800;
+    color: #123b5d;
+}
+
+.logo span {
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 7px;
+    border-radius: 8px;
+    background: #1e88e5;
+    color: white;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 35px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #4d5b6b;
+    font-weight: 500;
+}
+
+.navbar nav a:hover {
+    color: #1e88e5;
+}
+
+.nav-button {
+    padding: 11px 23px;
+    background: #1e88e5;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 650px;
+    padding: 80px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    background: linear-gradient(135deg, rgba(238,248,255,.92), rgba(255,255,255,.94)), url("/medical-bg.svg") center/cover;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.tagline {
+    color: #1e88e5;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 6vw, 72px);
+    line-height: 1.05;
+    margin-bottom: 25px;
+    color: #123b5d;
+}
+
+.hero h1 span {
+    color: #1e88e5;
+}
+
+.hero-text {
+    max-width: 580px;
+    color: #637083;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.hero-buttons {
+    margin-top: 35px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.primary-button,
+.secondary-button {
+    padding: 14px 25px;
+    border-radius: 9px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.primary-button {
+    background: #1e88e5;
+    color: white;
+}
+
+.secondary-button {
+    background: white;
+    color: #1e88e5;
+    border: 1px solid #b9d8ef;
+}
+
+
+/* =========================
+   HERO CARD
+========================= */
+
+.hero-card {
+    width: 360px;
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(30, 100, 150, 0.12);
+}
+
+.card-icon {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e7f4ff;
+    color: #1e88e5;
+    border-radius: 15px;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.hero-card h2 {
+    color: #123b5d;
+    margin-bottom: 12px;
+}
+
+.hero-card p {
+    color: #6b7787;
+    line-height: 1.6;
+}
+
+.status {
+    margin-top: 25px;
+    padding: 12px;
+    background: #f3faf6;
+    color: #26734d;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.status span {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    background: #35a66f;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.services,
+.login-section {
+    padding: 90px 7%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title p {
+    color: #1e88e5;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.section-title h2 {
+    font-size: 38px;
+    color: #123b5d;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.service-card {
+    padding: 30px;
+    background: white;
+    border: 1px solid #e4edf5;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(30, 100, 150, 0.1);
+}
+
+.service-icon {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    margin-bottom: 12px;
+    color: #123b5d;
+}
+
+.service-card p {
+    color: #687687;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   LOGIN / ROLES
+========================= */
+
+.login-section {
+    background: #eef8ff;
+}
+
+.role-container {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.role-card {
+    border: none;
+    padding: 30px 20px;
+    background: white;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+.role-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(30, 100, 150, 0.12);
+}
+
+.role-card span {
+    font-size: 35px;
+    margin-bottom: 8px;
+}
+
+.role-card strong {
+    font-size: 18px;
+    color: #123b5d;
+}
+
+.role-card small {
+    color: #778394;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 40px 7%;
+    text-align: center;
+    background: #123b5d;
+    color: white;
+}
+
+footer .logo {
+    color: white;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #c5d5e3;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .service-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .role-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .navbar nav {
+        display: none;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .nav-button {
+        padding: 9px 15px;
+    }
+
+    .hero {
+        padding: 60px 5%;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+
+    .role-container {
+        grid-template-columns: 1fr;
+    }
+
+    .services,
+    .login-section {
+        padding: 65px 5%;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+}
+
+/* =========================
+   REACT APP PAGES
+========================= */
+
+.role-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.simple-page {
+    min-height: 100vh;
+    padding: 60px 7%;
+    background: #f7fbff;
+}
+
+.simple-page h1 {
+    color: #123b5d;
+    margin-bottom: 12px;
+}
+
+.simple-page p {
+    color: #637083;
+    line-height: 1.6;
+}
+
+.data-list {
+    display: grid;
+    gap: 16px;
+    max-width: 800px;
+    margin-top: 25px;
+}
+
+.data-card {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #e4edf5;
+    border-radius: 12px;
+}
+
+.error-text {
+    color: #c62828 !important;
+    margin-top: 15px;
+}
+
+button {
+    font: inherit;
+}
+
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+
+/* =========================
+   MEDQ-CARE STAFF PAGES
+========================= */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: linear-gradient(135deg, rgba(235,248,255,.96), rgba(247,251,255,.96)), url('/medical-bg.svg') center/cover;
+}
+.login-card {
+  width: 100%; max-width: 430px; padding: 32px; background: rgba(255,255,255,.96);
+  border: 1px solid #e4edf5; border-radius: 20px; box-shadow: 0 20px 60px rgba(18,59,93,.14);
+}
+.login-card h2 { text-align:center; color:#1e88e5; font-size:28px; font-weight:800; margin-bottom:8px; }
+.login-card h3 { color:#123b5d; font-size:22px; margin-bottom:22px; }
+.login-card form { display:grid; gap:16px; }
+.login-card label { display:block; margin-bottom:6px; font-size:14px; font-weight:600; color:#374151; }
+.login-card input { width:100%; padding:12px 14px; border:1px solid #d5dce5; border-radius:10px; outline:none; }
+.login-card input:focus { border-color:#1e88e5; box-shadow:0 0 0 3px rgba(30,136,229,.12); }
+.login-card button { border:0; padding:12px 16px; border-radius:10px; background:#1e88e5; color:#fff; font-weight:700; cursor:pointer; }
+.login-card button:disabled { opacity:.65; cursor:not-allowed; }
+
+.staff-page-bg {
+  min-height:100vh;
+  background: linear-gradient(135deg, rgba(239,249,255,.92), rgba(247,251,255,.96)), url('/medical-bg.svg') center/cover fixed;
+}
