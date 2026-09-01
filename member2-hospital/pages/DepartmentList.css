@@ -1,0 +1,228 @@
+/* ================================
+   Department List Page
+================================ */
+
+.department-page {
+  min-height: 100vh;
+  padding: 40px;
+  background: #f5f7fb;
+  box-sizing: border-box;
+}
+
+
+/* ================================
+   Header
+================================ */
+
+.department-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.department-header h1 {
+  margin: 0 0 10px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.department-header p {
+  margin: 0;
+  font-size: 16px;
+  color: #6b7280;
+}
+
+
+/* ================================
+   Search
+================================ */
+
+.department-search {
+  max-width: 600px;
+  margin: 0 auto 25px;
+}
+
+.department-search input {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  outline: none;
+  font-size: 16px;
+  background: #ffffff;
+  box-sizing: border-box;
+  transition: 0.2s ease;
+}
+
+.department-search input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.department-search input::placeholder {
+  color: #9ca3af;
+}
+
+
+/* ================================
+   Department Information
+================================ */
+
+.department-info {
+  max-width: 1200px;
+  margin: 0 auto 20px;
+}
+
+.department-info p {
+  margin: 0;
+  font-size: 15px;
+  color: #4b5563;
+}
+
+
+/* ================================
+   Department Grid
+================================ */
+
+.department-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+
+/* ================================
+   No Department Message
+================================ */
+
+.no-department {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 40px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.no-department h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #1f2937;
+}
+
+.no-department p {
+  margin: 0;
+  color: #6b7280;
+}
+
+
+/* ================================
+   Selected Department
+================================ */
+
+.selected-department {
+  max-width: 700px;
+  margin: 35px auto 0;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.selected-department h2 {
+  margin: 0 0 20px;
+  font-size: 22px;
+  color: #1f2937;
+}
+
+.selected-department p {
+  margin: 10px 0;
+  font-size: 15px;
+  color: #4b5563;
+}
+
+
+/* ================================
+   Primary Button
+================================ */
+
+.primary-button {
+  margin-top: 18px;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.primary-button:hover {
+  background: #1d4ed8;
+}
+
+.primary-button:active {
+  transform: scale(0.98);
+}
+
+
+/* ================================
+   Responsive Design
+================================ */
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .department-page {
+    padding: 30px 20px;
+  }
+
+  .department-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .department-header h1 {
+    font-size: 28px;
+  }
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .department-page {
+    padding: 25px 15px;
+  }
+
+  .department-header h1 {
+    font-size: 24px;
+  }
+
+  .department-header p {
+    font-size: 14px;
+  }
+
+  .department-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .department-search input {
+    font-size: 14px;
+    padding: 12px 14px;
+  }
+
+  .selected-department {
+    padding: 20px;
+  }
+
+  .primary-button {
+    width: 100%;
+  }
+}

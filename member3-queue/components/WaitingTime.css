@@ -1,0 +1,30 @@
+.waiting-time-card {
+  width: 320px;
+  padding: 24px;
+  margin: 20px auto;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.waiting-time-card h2 {
+  margin-bottom: 15px;
+}
+
+.waiting-time-value {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 10px 0 0;
+}
+
+.waiting-time-unit {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.waiting-time-message {
+  font-weight: bold;
+  margin-top: 15px;
+}

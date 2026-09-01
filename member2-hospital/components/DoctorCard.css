@@ -1,0 +1,159 @@
+/* ================================
+   DOCTOR CARD
+================================ */
+
+.doctor-card {
+  width: 100%;
+  max-width: 500px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  gap: 18px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Card hover effect */
+
+.doctor-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ================================
+   DOCTOR IMAGE
+================================ */
+
+.doctor-image-container {
+  width: 100px;
+  min-width: 100px;
+  height: 120px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.doctor-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.doctor-placeholder {
+  width: 100%;
+  height: 100%;
+  background: #e8f1ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 42px;
+}
+
+
+/* ================================
+   DOCTOR DETAILS
+================================ */
+
+.doctor-details {
+  flex: 1;
+}
+
+.doctor-name {
+  margin: 0 0 6px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.doctor-specialization {
+  margin: 0 0 5px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+.doctor-qualification {
+  margin: 0 0 14px;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+
+/* ================================
+   DOCTOR INFORMATION
+================================ */
+
+.doctor-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.doctor-info-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #4b5563;
+}
+
+
+/* ================================
+   BOOK APPOINTMENT BUTTON
+================================ */
+
+.book-appointment-btn {
+  width: 100%;
+  padding: 11px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.book-appointment-btn:hover {
+  background: #1d4ed8;
+}
+
+.book-appointment-btn:active {
+  transform: scale(0.98);
+}
+
+
+/* ================================
+   MOBILE RESPONSIVE
+================================ */
+
+@media (max-width: 600px) {
+
+  .doctor-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .doctor-image-container {
+    width: 110px;
+    height: 110px;
+  }
+
+  .doctor-info-item {
+    justify-content: center;
+  }
+
+  .doctor-details {
+    width: 100%;
+  }
+
+  .book-appointment-btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,269 @@
+/* =================================
+   Hospital Details Page
+================================= */
+
+.hospital-details-page {
+  min-height: 100vh;
+  padding: 40px;
+  background: #f5f7fb;
+  box-sizing: border-box;
+}
+
+
+/* =================================
+   Header
+================================= */
+
+.hospital-details-header {
+  max-width: 1100px;
+  margin: 0 auto 30px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.hospital-icon {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eff6ff;
+  border-radius: 50%;
+  font-size: 36px;
+}
+
+.hospital-details-header h1 {
+  margin: 0 0 8px;
+  font-size: 30px;
+  color: #1f2937;
+}
+
+.hospital-location {
+  margin: 0;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+
+/* =================================
+   Description
+================================= */
+
+.hospital-description {
+  max-width: 1100px;
+  margin: 0 auto 25px;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.hospital-description h2 {
+  margin: 0 0 12px;
+  color: #1f2937;
+  font-size: 22px;
+}
+
+.hospital-description p {
+  margin: 0;
+  color: #6b7280;
+  line-height: 1.7;
+}
+
+
+/* =================================
+   Hospital Information
+================================= */
+
+.hospital-info-grid {
+  max-width: 1100px;
+  margin: 0 auto 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.hospital-info-card {
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.hospital-info-card h3 {
+  margin: 0 0 10px;
+  font-size: 16px;
+  color: #374151;
+}
+
+.hospital-info-card p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+/* =================================
+   Sections
+================================= */
+
+.hospital-section {
+  max-width: 1100px;
+  margin: 0 auto 30px;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.section-header h2 {
+  margin: 0;
+  color: #1f2937;
+  font-size: 22px;
+}
+
+
+/* =================================
+   Department / Service List
+================================= */
+
+.hospital-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.hospital-list-item {
+  padding: 14px;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  color: #374151;
+  font-size: 14px;
+  text-align: center;
+}
+
+
+/* =================================
+   Buttons
+================================= */
+
+.hospital-actions {
+  max-width: 1100px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.primary-button,
+.secondary-button {
+  padding: 13px 22px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.primary-button {
+  border: none;
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.primary-button:hover {
+  background: #1d4ed8;
+}
+
+.secondary-button {
+  border: 1px solid #2563eb;
+  background: #ffffff;
+  color: #2563eb;
+}
+
+.secondary-button:hover {
+  background: #eff6ff;
+}
+
+.primary-button:active,
+.secondary-button:active {
+  transform: scale(0.98);
+}
+
+
+/* =================================
+   Tablet
+================================= */
+
+@media (max-width: 900px) {
+  .hospital-details-page {
+    padding: 30px 20px;
+  }
+
+  .hospital-info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hospital-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* =================================
+   Mobile
+================================= */
+
+@media (max-width: 600px) {
+  .hospital-details-page {
+    padding: 20px 15px;
+  }
+
+  .hospital-details-header {
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hospital-details-header h1 {
+    font-size: 24px;
+  }
+
+  .hospital-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hospital-list {
+    grid-template-columns: 1fr;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hospital-actions {
+    flex-direction: column;
+  }
+
+  .primary-button,
+  .secondary-button {
+    width: 100%;
+  }
+}

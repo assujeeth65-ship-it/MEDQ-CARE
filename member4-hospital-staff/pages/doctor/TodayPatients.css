@@ -1,0 +1,20 @@
+.today-patients {
+  padding: 20px;
+}
+
+.today-patients h2 {
+  margin-bottom: 20px;
+}
+
+.patient-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.patient-card {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+}

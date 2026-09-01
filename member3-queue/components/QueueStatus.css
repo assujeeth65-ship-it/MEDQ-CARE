@@ -1,0 +1,41 @@
+.queue-status {
+  width: 90%;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.queue-status h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.queue-status-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.status-box {
+  padding: 20px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.status-box h3 {
+  font-size: 30px;
+  margin: 0 0 8px;
+}
+
+.status-box p {
+  margin: 0;
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  .queue-status-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

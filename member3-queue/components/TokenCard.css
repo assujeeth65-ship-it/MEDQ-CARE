@@ -1,0 +1,72 @@
+.token-card {
+  width: 320px;
+  padding: 22px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.token-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.token-label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.token-status {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.token-status.waiting {
+  background: #fef3c7;
+}
+
+.token-status.serving {
+  background: #dcfce7;
+}
+
+.token-status.completed {
+  background: #e5e7eb;
+}
+
+.token-number {
+  margin: 20px 0 8px;
+  text-align: center;
+  font-size: 42px;
+  font-weight: 800;
+}
+
+.patient-name {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.token-details {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 15px;
+}
+
+.token-details div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.token-details span {
+  font-size: 12px;
+}
+
+.token-details strong {
+  font-size: 15px;
+}
