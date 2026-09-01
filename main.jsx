@@ -6,8 +6,8 @@ import "./style.css";
 
 createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <BrowserRouter basename="/demo1">
+  <App />
+</BrowserRouter>
   </React.StrictMode>
 );
