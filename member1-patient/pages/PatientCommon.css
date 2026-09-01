@@ -1,0 +1,3 @@
+/* MEDQ-CARE Member 1 fallback styling. Tailwind utilities are loaded globally in index.html. */
+.patient-page { min-height: 100vh; background: #f5f8fc; }
+.error-text { color: #dc2626; }
